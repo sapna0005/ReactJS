@@ -27,6 +27,14 @@ body{
 .skincare{
   height: 250px;
 }
+.topwear-list li {
+  padding: 4px 0;
+  cursor: pointer;
+}
+.topwear-list li:hover {
+  color:black;
+}
+
 .footer-list {
   list-style: none;
   padding: 0;

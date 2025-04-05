@@ -44,14 +44,15 @@ import d2 from "./image/fight pollution.avif"
 import d3 from "./image/hey.avif"
 import d4 from "./image/meet.avif"
 
+import React, { useState } from "react";
 
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import Tshirts from './Menswear/Tshirts';
 
 
 const App=()=>{
+  const [showDropdown, setShowDropdown] = useState(false);
   return(
    <>
    <Navbar expand="lg" style={{zIndex:999, backgroundColor:"white", boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)" }}>
@@ -73,12 +74,51 @@ const App=()=>{
             navbarScroll
           >
           
-          <Nav.Link href="#" style={{ fontSize: '14px' , fontWeight:"bold"}}>MEN</Nav.Link>
+          
+          
+          <div
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
+              style={{ position: 'relative' }}
+            >
+              <Nav.Link href="#" style={{ fontSize: '14px', fontWeight: "bold" }}>
+                MEN
+              </Nav.Link>
+
+              {showDropdown && (
+                <div
+                  style={{
+                    position: 'absolute',
+                    top: '100%',
+                    left: 0,
+                    backgroundColor: 'white',
+                    boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.15)',
+                    padding: '10px',
+                    zIndex: 1000
+                  }}
+                >
+                  <p style={{ color: "red", fontSize: "14px", marginBottom: "8px" }}>TopWear</p>
+                  <ul className="topwear-list" style={{ listStyle: 'none', paddingLeft: 0 }}>
+                    <li>T-Shirts</li>
+                    <li>Casual Shirts</li>
+                    <li>Formal Shirts</li>
+                    <li>Sweatshirts</li>
+                    <li>Sweaters</li>
+                    <li>Jackets</li>
+                    <li>Blazer & Coats</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          <Tshirts/>
+             
+
+
             <Nav.Link href="#" style={{ fontSize: '14px' , fontWeight:"bold"}}>WOMEN</Nav.Link>
             <Nav.Link href="#" style={{ fontSize: '14px' , fontWeight:"bold"}}>KIDS</Nav.Link>
             <Nav.Link href="#" style={{ fontSize: '14px' , fontWeight:"bold"}}>BEAUTY</Nav.Link>
             <Nav.Link href="#" style={{ fontSize: '14px' , fontWeight:"bold"}}>GENZ</Nav.Link>
-
+            
             </Nav>
 
           <Form className="d-flex" style={{marginRight:"200px"}}>
