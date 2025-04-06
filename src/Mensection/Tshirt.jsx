@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import k1 from "./tshirt1.webp"
 import k2 from "./tshirt2.webp"
 import k3 from "./tshirt3.webp"
@@ -13,8 +14,7 @@ import k5 from "./tshirt5.webp"
 import k6 from "./tshirt6.webp"
 import k7 from "./tshirt7.webp"
 import k8 from "./tshirt8.webp"
-import k9 from "./tshirt9.webp"
-import k10 from "./tshirt10.webp"
+
 
 
 
@@ -103,6 +103,23 @@ const Tshirt=()=>{
  
 
 <div className='tshirtimg' >
+
+<Container >
+   <Row>
+    <Col>
+      <Card style={{ width: '13rem' }}>
+       <Card.Img variant="top" src={k1} style={{height:"227px"}}/>
+         <Card.Body>
+           <Card.Title>Free Gifts ₹999</Card.Title>
+             <Card.Text>
+               Range Starts @₹425
+             </Card.Text>
+           </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+ </Container>
+
   <Container > 
    <Row>
     <Col>
@@ -117,6 +134,38 @@ const Tshirt=()=>{
     </Card></Col>
      </Row>
     </Container>
+
+    <Container >
+   <Row>
+    <Col>
+      <Card style={{ width: '13rem' }}>
+       <Card.Img variant="top" src={k3} style={{height:"227px"}}/>
+         <Card.Body>
+           <Card.Title>Free Gifts ₹999</Card.Title>
+             <Card.Text>
+               Range Starts @₹425
+             </Card.Text>
+           </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+ </Container>
+
+ <Container >
+   <Row>
+    <Col>
+      <Card style={{ width: '13rem' }}>
+       <Card.Img variant="top" src={k4} style={{height:"227px"}}/>
+         <Card.Body>
+           <Card.Title>Free Gifts ₹999</Card.Title>
+             <Card.Text>
+               Range Starts @₹425
+             </Card.Text>
+           </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+ </Container>
 
   <Container >
    <Row>
@@ -137,8 +186,8 @@ const Tshirt=()=>{
  <Container >
    <Row>
     <Col>
-      <Card style={{ width: '13rem'}}>
-       <Card.Img variant="top" src={k8} />
+      <Card style={{ width: '13rem' }}>
+       <Card.Img variant="top" src={k6} style={{height:"227px"}}/>
          <Card.Body>
            <Card.Title>Free Gifts ₹999</Card.Title>
              <Card.Text>
@@ -149,6 +198,40 @@ const Tshirt=()=>{
     </Col>
   </Row>
  </Container>
+
+ <Container >
+   <Row>
+    <Col>
+      <Card style={{ width: '13rem' }}>
+       <Card.Img variant="top" src={k7} style={{height:"227px"}}/>
+         <Card.Body>
+           <Card.Title>Free Gifts ₹999</Card.Title>
+             <Card.Text>
+               Range Starts @₹425
+             </Card.Text>
+           </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+ </Container>
+
+ <Container >
+   <Row>
+    <Col>
+      <Card style={{ width: '13rem'}}>
+       <Card.Img variant="top" src={k8} style={{maxHeight:"227px"}}/>
+         <Card.Body>
+           <Card.Title>Free Gifts ₹999</Card.Title>
+             <Card.Text>
+               Range Starts @₹425
+             </Card.Text>
+           </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+ </Container>
+
+ 
 
 
 
