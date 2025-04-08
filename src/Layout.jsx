@@ -5,7 +5,7 @@ const Layout=()=>{
         <>
         
             <Link to="/Tshirt">T-Shirts</Link>
-            
+            <Link to="/TshirtDetails">TshirtDetails</Link>
 
           <Outlet/>
         </>

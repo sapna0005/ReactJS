@@ -38,6 +38,7 @@ import React, { useState } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import Tshirt from './Mensection/Tshirt';
+import TshirtDetails from './Tshirtpage/TshirtDetails';
 
 const App = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -390,6 +391,7 @@ const App = () => {
             </>
           } />
           <Route path="/tshirt" element={<Tshirt />} />
+          <Route path='/TshirtDetails' element={<TshirtDetails/>}/>
         </Routes>
 
         <footer style={{ backgroundColor: '#f3f3f3', padding: '2rem 0', marginTop: '3rem' }}>

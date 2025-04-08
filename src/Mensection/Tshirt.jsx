@@ -1,6 +1,7 @@
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 import { useState } from "react";
 import Container from 'react-bootstrap/Container';
+import { Link } from 'react-router-dom';
 
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -108,6 +109,24 @@ const Tshirt=()=>{
    <Row>
     <Col>
       <Card style={{ width: '13rem' }}>
+      <Link to="/TshirtDetails">
+       <Card.Img variant="top" src={k2} style={{height:"227px"}}/>
+       </Link>
+         <Card.Body>
+           <Card.Title>Free Gifts ₹999</Card.Title>
+             <Card.Text>
+               Range Starts @₹425
+             </Card.Text>
+           </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+ </Container>
+
+ <Container >
+   <Row>
+    <Col>
+      <Card style={{ width: '13rem' }}>
        <Card.Img variant="top" src={k1} style={{height:"227px"}}/>
          <Card.Body>
            <Card.Title>Free Gifts ₹999</Card.Title>
@@ -120,20 +139,6 @@ const Tshirt=()=>{
   </Row>
  </Container>
 
-  <Container > 
-   <Row>
-    <Col>
-    <Card style={{ width: '13rem' }}>
-    <Card.Img variant="top" src={k2} />
-    <Card.Body>
-    <Card.Title>Free Gifts ₹999</Card.Title>
-    <Card.Text>
-    Range Starts @₹425
-    </Card.Text>
-    </Card.Body>
-    </Card></Col>
-     </Row>
-    </Container>
 
     <Container >
    <Row>
@@ -230,11 +235,6 @@ const Tshirt=()=>{
     </Col>
   </Row>
  </Container>
-
- 
-
-
-
 </div> 
 </div>
 
