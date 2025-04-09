@@ -77,5 +77,6 @@ h6 {
 .tshirtpage{
   display: grid;
   grid-template-columns:repeat(2, auto); ;
- padding: 20px;
+  padding: 20px;
+  gap: 5px;
 }
