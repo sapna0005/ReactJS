@@ -8,13 +8,13 @@ const TshirtDetails=()=>{
         <>
          <div style={{display:"flex", flexDirection:"row"}} >
            <div className="tshirtpage">
-            
-            <img src={s1} style={{height:"350px", width:"350px"}}/>
-            <img src={s2} style={{height:"350px", width:"350px"}}/>
-            <img src={s3} style={{height:"350px", width:"350px"}}/>
-            <img src={s4} style={{height:"350px", width:"350px"}}/>
+             <img src={s1} style={{height:"350px", width:"350px"}}/>
+             <img src={s2} style={{height:"350px", width:"350px"}}/>
+             <img src={s3} style={{height:"350px", width:"350px"}}/>
+             <img src={s4} style={{height:"350px", width:"350px"}}/>
            </div>
-          
+
+           <h5 style={{padding:"30px"}}>BULLMER Black Trendy Front <br />and Back Printed oversized <br /> Round Neck T-shirt for men</h5>
           
 
          </div>
